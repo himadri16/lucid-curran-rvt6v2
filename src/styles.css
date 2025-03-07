@@ -1,0 +1,185 @@
+General Styles .container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* Top Bar */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #004c97;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.top-bar h1 {
+  margin: 0;
+}
+
+.highlight {
+  color: #fbc02d;
+}
+
+.top-buttons button {
+  margin-left: 10px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.dashboard-btn {
+  background: white;
+  color: #004c97;
+}
+
+.new-project-btn {
+  background: #fbc02d;
+  color: black;
+}
+
+.new-dashboard-btn {
+  background: #28a745;
+  color: white;
+}
+
+/* Layout */
+.dashboard-layout {
+  display: flex;
+  margin-top: 20px;
+}
+
+/* Project List */
+.project-list {
+  width: 20%;
+  border-right: 2px solid #ddd;
+  padding: 10px;
+}
+
+.project-item {
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #f1f1f1;
+  transition: background 0.3s;
+}
+
+.project-item:hover,
+.project-item.active {
+  background: #007bff;
+  color: white;
+}
+
+/* Workflow Display */
+.workflow-container {
+  width: 80%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  border-left: 2px solid #ddd;
+  height: 400px; /* Fixed height to allow vertical scrolling */
+  overflow-y: auto;
+}
+
+/* Scrollable Workflow Grid */
+/* .workflow-scroll {
+  overflow: auto;
+  max-height: 350px; /* Allow vertical scrolling */
+  max-width: 100%; /* Allow horizontal scrolling */
+} */
+
+/* Each Project Section */
+.workflow-section {
+  margin-bottom: 20px;
+}
+
+/* Workflow Grid */
+.workflow-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+}
+
+/* Folder Box */
+/* .folder-box {
+  padding: 15px;
+  border-radius: 5px;
+  min-width: 150px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  background: #f1f1f1;
+  position: relative;
+} */
+
+/* General folder styling */
+/* .folder-box {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+} */
+
+.folder-box {
+  padding: 15px;
+  border-radius: 5px;
+  width: 150px; /* Fixed width for uniformity */
+  height: 50px;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 150px;
+  clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%, 10% 50%);
+  margin-right: -10px; */
+}
+
+/* Apply colors based on status */
+.red {
+  background-color: #dc3545 !important; /* Red */
+  color: white !important;
+}
+
+.amber {
+  background-color: #ffc107 !important; /* Amber */
+  color: black;
+}
+
+.green {
+  background-color: #28a745 !important; /* Green */
+  color: white;
+}
+
+/* Subfolders */
+.subfolder-list {
+  margin-top: 8px;
+}
+
+.subfolder-box {
+  margin-top: 5px;
+  padding: 10px;
+  background: #e1e1e1;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Add Scrollbars */
+.workflow-scroll::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.workflow-scroll::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.workflow-scroll::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
